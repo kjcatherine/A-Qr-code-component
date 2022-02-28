@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(212, 45%, 89%);
+  margin: auto 4rem;
+  max-height: 100vh;
+}
+.container {
+  background-color: hsl(0, 0%, 100%);
+  position: relative;
+  top: 10rem;
+  max-width: 20%;
+  height: auto;
+  padding: 3rem 0;
+  margin: 0 auto;
+  border-radius: 2rem;
+}
+
+.text {
+  text-align: center;
+  margin: 0 1rem 0 1rem;
+}
+.text h1 {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: hsl(218, 44%, 22%);
+  margin-bottom: 1.3rem;
+  font-weight: 700;
+  position: relative;
+  bottom: 0.5rem;
+}
+.text p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: hsl(220, 15%, 55%);
+}
+
+.image {
+  position: relative;
+  bottom: 1.5rem;
+}
+img {
+  margin: 0 0 1rem 1.2rem;
+  width: 90%;
+  height: 60%;
+  border-radius: 1rem;
+}
+
+.attribution {
+  position: relative;
+  top: 16rem;
+  color: hsl(218, 44%, 22%);
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(6, 89%, 52%);
+  text-decoration: none;
+}
+
+@media all and (max-width: 1440px) {
+  .container {
+    max-width: 25rem;
+  }
+}
+@media all and (max-width: 420px) {
+  .container {
+    max-width: 100%;
+  }
+  img {
+    margin: auto;
+    width: 90%;
+    height: 60%;
+    border-radius: 1rem;
+  }
+  .image {
+    left: 1.5rem;
+  }
+  .text h1 {
+    font-size: 2rem;
+    margin-bottom: rem;
+  }
+  .text p {
+    font-size: 1.3rem;
+  }
+  .text {
+    margin: 0 0 0 0;
+  }
+  .attribution {
+    top: 14rem;
+  }
+}
